@@ -2,7 +2,7 @@
 
 # SMSme
 
-A Ruby API library for the SMSme platform.
+A Ruby API library for the [SMSme platform](https://smsme.gr/).
 
 ## Getting started
 
@@ -28,31 +28,31 @@ Create the object:
 sms = SMSme::Api.new('YOUR_USERNAME', 'YOUR_PASSWORD')
 ```
 
-### Get balance
+#### Get balance
 
 ```ruby
 sms.balance.data
 ```
 
-### Get pricing table
+#### Get pricing table
 
 ```ruby
 sms.pricing.data
 ```
 
-### Send a single SMS
+#### Send a single SMS
 
 ```ruby
 sms.send.data('originator', 'recipient', 'message', 'delivery_date')
 ```
 
-### Send bulk SMS
+#### Send bulk SMS
 
 ```ruby
 sms.send_bulk.data('originator', 'recipient1, recipient2', 'message', 'delivery_date')
 ```
 
-### Get reports
+#### Get reports
 
 ```ruby
 sms.reports.data('start_date', 'end_date', 'originator', 'recipient')
