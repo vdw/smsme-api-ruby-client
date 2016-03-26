@@ -9,9 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Dimitris Krestos']
   spec.email         = ['dkrestos@gmail.com']
 
-  spec.summary       = 'A Ruby API library for the SMSme platform.'
+  spec.summary       = 'SMSme API ruby client'
   spec.description   = 'A Ruby API library for the SMSme platform.'
   spec.homepage      = 'https://github.com/vdw/smsme-api-ruby-client'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
